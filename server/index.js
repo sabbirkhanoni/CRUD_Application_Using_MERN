@@ -22,7 +22,11 @@ app.use(bodyParser.json({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
 
 //cors
-app.use(cors());
+app.use(cors({
+    origin: "https://crud-application-using-mern-client.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}));
 
 //rouets
 app.use('/',Routes);
