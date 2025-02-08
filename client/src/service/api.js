@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 
-const URL = 'https://crud-application-using-mern-server.onrender.com';
+const URL = "https://crud-application-using-mern-server.onrender.com";
 
 export const addUser = async(data) => {
     try {
