@@ -22,16 +22,12 @@ app.use(bodyParser.json({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
 
 //cors
-app.use(cors({
-    origin: "https://crud-application-using-mern-client.onrender.com",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
-}));
+app.use(cors());
 
 //rouets
 app.use('/',Routes);
 
-const PORT = process.env.PORT || 8000;
+const PORT = 8000;
 
 const username = process.env.DB_USERNAME;
 const password = process.env.DB_PASSWORD;
