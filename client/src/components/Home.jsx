@@ -55,7 +55,7 @@ function Home() {
             gutterBottom
             fontWeight="bold"
           >
-            Start the year strong with the top-rated Employee.
+            Start the year strong with the top-rated Employees.
           </Typography>
         </Container>
 
